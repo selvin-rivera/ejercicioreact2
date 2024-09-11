@@ -19,9 +19,9 @@ const NotasParciales = () => {
             let a = parseInt(n1)
             let b = parseInt(n2)
             let c = parseInt(n3)
+            
             let NotaFinal = a + b + c;
             setResultadoNotas(NotaFinal)
-
             if (a === 0 || b === 0 || c === 0) {
                 alerta("Por favor ingrese todas las notas correctamente", "warning")
             } else if (a > 30 || b > 30) {
@@ -29,7 +29,7 @@ const NotasParciales = () => {
             } else if (c > 40) {
                 alerta('La nota del tercer parcial sobrepasa el 40%', 'warning')
             } else if (NotaFinal < 60) {
-                alerta("Reprobado");
+                alerta ("Reprobado");
             } else if (NotaFinal < 80) {
                 alerta("Bueno");
             } else if (NotaFinal < 90) {
